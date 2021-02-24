@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html onload="screenadj()">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link rel="stylesheet" href="CSS/login.css">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/ico" href="Images/favicon/favicon.ico"/>
+        <script src="JS/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+    </head>
+    <body onload="myFunction()">
+        <img id="bg_box" src="Images/bg_login4.jpg">
+    
+            
+            <div id="main">
+                <div id="login_box">
+            <img src="Images/Logo3.png" id="loginlogo">
+            <h3 id="logininfotext">Library Management System</h3>
+            <h1 id="loginlogotext">Sign in</h1>
+            <form>
+                
+            <input id="username_login" style="margin-top: 15px;" class="textbox" type="email" placeholder=" ">
+                <label class="textbox_label" id="username_login_label" for="username_login">Email</label>
+
+                <input id="password_login" style="margin-top: 15px;" class="textbox" type="password" placeholder=" ">
+                <label class="textbox_label" id="password_login_label" for="password_login">Password</label>
+                    </form>
+                    <form>
+                        <button id="showpass" onclick="showpassword()" type="button"><img class="eye" id="eye" src="Images/visibility-off-512.png"></button>
+
+                    </form>     
+            
+            <br><b><a id="createaccount">Create New Account</a></b>
+            <a id="back" href="index.html">Back</a>
+            <button class="next">Sign in</button> 
+                    
+                </div>
+            </div>
+        <div id="loader_screen" style="background: #fff;">
+                <div id="loader" style="top: calc(50% - 40px);">
+                <div id="shadow"></div>
+                <div id="box"></div>
+            <h1 id="Loading_text">Loading</h1>
+            </div>
+        </div>
+    </body>
+    
+</html>

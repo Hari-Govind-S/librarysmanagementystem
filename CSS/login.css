@@ -1,0 +1,218 @@
+body{
+    overflow: hidden;
+}
+#bg_box{
+    min-height: 100vh;
+    width: 100vw;
+}
+#loader_screen{
+    width: 388px;
+    height: 508px;
+    background: #fff;
+    position: absolute;
+    top: calc(50% - 254px);
+    left: calc(50% - 194px);
+    border-radius: 20px;
+    border: 1.5px solid transparent;
+}
+#login_box{
+    width: 400px;
+    height: 510px;
+    background: #fff;
+    border: 1.5px solid #DADCE0;
+    border-radius: 20px;
+    position: absolute;
+    top: calc(50% - 255px);
+    left: calc(50% - 200px);
+}
+
+#showpass{
+    border: 0px solid transparent;
+    background-color: transparent;
+    position: absolute;
+    top:57%;
+    left:77%;
+    padding: 10px 5px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form{
+    align-content: center;
+    align-items: center;
+}
+.textbox{
+    height:54px;
+    position: relative;
+    padding: 13px 20px;
+    width:75%;
+    top: 3%;
+    left: 12.5%;
+    border-radius: 4px;
+    border: 1px solid #DADCE0;
+    font-family: 'Product Sans';
+    font-size: 16px;
+}
+
+.textbox_label{
+    background: #fff;
+    font-family: 'Product Sans';
+    font-size: 18px;
+    font-weight: 100;
+    color: #80868b;
+    display: inline-block;
+    transition-duration: 0.3s;
+    position: relative;
+    left:-60%;
+    padding: 5px;
+    user-select: none;
+    top:0.2vh;
+    font-size: 18px;
+}
+
+
+#username_login:active{
+    border: 1px solid #1a73e8;
+    color:black;
+}
+#username_login:focus{
+     outline: none;
+    border: 1px solid #1a73e8;
+    color:black;
+}
+#username_login:focus~#username_login_label{
+    top:-3.6vh;
+    left: -61%;
+    font-size: 16px;
+    color:#1a73e8;
+}
+#username_login:not(:placeholder-shown)~#username_login_label{
+    top:-3.6vh;
+    font-size: 16px;
+    color: #80868b;
+}
+#password_login:active{
+    border: 1px solid #1a73e8;
+    color:black;
+}
+#password_login:focus{
+     outline: none;
+    border: 1px solid #1a73e8;
+    color:black;
+}
+#password_login:focus~#password_login_label{
+    top:-3.6vh;
+    left: -61%;
+    font-size: 16px;
+    color:#1a73e8;
+}
+#password_login:not(:placeholder-shown)~#password_login_label{
+    top:-3.6vh;
+    font-size: 16px;
+    color: #80868b;
+}
+
+
+#loginlogo{
+    width:12%;
+    height:8%;
+    position: relative;
+    top:4%;
+    left:calc(50% - 6%);
+}
+
+#loginlogotext{
+    font-family: 'Product Sans';
+    font-size: 42px;
+    font-weight: 100;
+   text-align: center;
+    margin-top: 30px;
+    color: black;
+}
+
+
+
+.eye{
+    height:25px;
+    width: 25px;
+}
+#logininfotext{
+     font-family: 'Product Sans';
+    font-size: 20px;
+    font-weight: 100;
+   text-align: center;
+    margin-top: 23px;
+    color: #80868b;
+}
+
+#createaccount{
+    font-family: 'Product Sans';
+    font-size: 16px;
+    color: #1a73e8;
+    margin-left: 15%;
+    margin-top: 0%;
+    font-weight: 500;
+}
+
+#createaccount:hover{
+    cursor: pointer;
+    color: #304ffe;
+}
+#back{
+   font-family: 'Product Sans';
+    font-size: 16px;
+    color: #80868b;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2.5% 10%;
+    background: #fff;
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 87%;
+    left: 32%;
+    transition-duration: 0.3s;
+}
+
+#back:hover{
+    color:#5f6368;
+    cursor: pointer;
+    background: #f8f9fa;
+}
+
+#back:active{
+    color: #272124;
+    background: #f1f1f1;
+}
+.next{
+    font-family: 'Product Sans';
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    width: 30%;
+    height: 8%;
+    position: absolute;
+    top: 87%;
+    left: 63%;
+    background: #2979ff;
+    outline: none;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.next:hover{
+    cursor: pointer;
+    background: #304ffe;
+    border: 0px solid transparent;
+}
+.next:active{
+    outline: none;
+    cursor: pointer;
+    background: #004ecb;
+    border: 0px solid transparent;
+}
+
